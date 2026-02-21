@@ -19,6 +19,9 @@
         disko.nixosModules.disko
         ./disk-config.nix
         ./configuration.nix
+        {
+          hardware.facter.reportPath = ./facter.json;
+        }
       ];
     };
   };
