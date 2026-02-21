@@ -3,12 +3,16 @@
   pkgs,
   ...
 }: {
+  system.autoUpgrade = {
+    enable = true;
+    flake = "github:push-and-pray/friendly-octo-broccoli";
+  };
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
-  networking.hostName = "my-new-machine";
+  networking.hostName = "nixos";
   networking.networkmanager.enable = true;
 
   services.openssh.enable = true;
