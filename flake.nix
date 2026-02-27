@@ -16,7 +16,6 @@
     nixosConfigurations."nixos" = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
-        "${nixpkgs}/nixos/modules/virtualisation/amazon-image.nix"
         disko.nixosModules.disko
         ./disk-config.nix
         ./configuration.nix
