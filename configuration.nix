@@ -3,14 +3,6 @@
   pkgs,
   ...
 }: {
-  system.autoUpgrade = {
-    enable = true;
-    flake = "github:push-and-pray/friendly-octo-broccoli";
-  };
-  nix.settings = {
-    substituters = [ "https://harmonia.altanen.casa" ];
-    trusted-public-keys = [ "altanen-cache:FyBhI6Zc9cYE/+Xn7KkrY+az5VzmH1BDQ/o9CmbzoNM=" ]; 
-  };
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
