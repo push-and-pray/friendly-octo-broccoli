@@ -19,6 +19,7 @@
     initialPassword = "nixos";
     openssh.authorizedKeys.keys = [
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFMoK5tmhtGeKfTXfA51uIPV2kZGUXZYWAtEmDMNbdX7"
+      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPiaayaWR+KgD/2gUke5ll5ZKHMLnTJx/3bfc2522qiQ"
     ];
   };
 
